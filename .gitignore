@@ -3,6 +3,10 @@
 # web application files
 myoutfit-grailsPlugins.iml
 myoutfit.iml
+web-app/WEB-INF/tld/spring.tld
+web-app/WEB-INF/tld/grails.tld
+web-app/WEB-INF/sitemesh.xml
+
 
 # IDE support files
 /.classpath

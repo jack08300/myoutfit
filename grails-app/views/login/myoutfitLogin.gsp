@@ -33,11 +33,11 @@
         </div>
     </div>
     <div id="loginPop" class="popup">
-        <g:render template="loginPop"/>
+        <g:render template="/login/loginPop"/>
     </div>
 
     <div id="signupPop" class="popup">
-        <g:render template="signupPop"/>
+        <g:render template="/login/signupPop"/>
     </div>
 <r:layoutResources/>
 </body>

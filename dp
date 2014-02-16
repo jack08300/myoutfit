@@ -1,4 +1,3 @@
-
 git pull
 today=`date "+%Y%m%d_%ss"`
 grails clean

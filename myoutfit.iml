@@ -50,6 +50,7 @@
       <sourceFolder url="file://$MODULE_DIR$/grails-app/i18n" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/unit" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/test/integration" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target/classes" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
@@ -60,6 +61,9 @@
         <CLASSES>
           <root url="file://$MODULE_DIR$/lib" />
           <root url="jar://$USER_HOME$/.grails/ivy-cache/org.eclipse.jdt.core.compiler/ecj/jars/ecj-3.7.2.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.22.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework.security/spring-security-web/jars/spring-security-web-3.2.0.RC1.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework.security/spring-security-core/jars/spring-security-core-3.2.0.RC1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -67,7 +71,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="grails-2.2.3" level="application" />
-    <orderEntry type="module" module-name="myoutfit-grailsPlugins" />
   </component>
 </module>
 

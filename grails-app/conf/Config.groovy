@@ -33,7 +33,7 @@ grails.mime.types = [
 //grails.urlmapping.cache.maxsize = 1000
 
 // What URL patterns should be processed by the resources plugin
-grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
+grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*', '/cache/*']
 
 // The default codec used to encode data with ${}
 grails.views.default.codec = "none" // none, html, base64
@@ -58,6 +58,8 @@ grails.exceptionresolver.params.exclude = ['password']
 
 // configure auto-caching of queries by default (if false you can cache individual queries with 'cache: true')
 grails.hibernate.cache.queries = false
+
+grails.resources.processing.startup = "delayed"
 
 environments {
     development {
@@ -89,3 +91,35 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'myoutfit.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'myoutfit.UserRole'
+grails.plugin.springsecurity.authority.className = 'myoutfit.Role'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                              ['permitAll'],
+	'/index':                         ['permitAll'],
+	'/index.gsp':                     ['permitAll'],
+	'/**/js/**':                      ['permitAll'],
+	'/**/css/**':                     ['permitAll'],
+	'/**/images/**':                  ['permitAll'],
+	'/**/favicon.ico':                ['permitAll']
+]
+
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'myoutfit.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'myoutfit.UserRole'
+grails.plugin.springsecurity.authority.className = 'myoutfit.Role'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                              ['permitAll'],
+	'/index':                         ['permitAll'],
+	'/index.gsp':                     ['permitAll'],
+	'/**/js/**':                      ['permitAll'],
+	'/**/css/**':                     ['permitAll'],
+	'/**/images/**':                  ['permitAll'],
+	'/**/favicon.ico':                ['permitAll']
+]
+

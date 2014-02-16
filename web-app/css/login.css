@@ -1,0 +1,66 @@
+body{
+    color: #282828;
+}
+#loginContent {
+    text-align: center;
+
+}
+#loginContent .content{
+    display: inline-block;
+}
+#loginContent .logo{
+    margin-top: 50px;
+    background: url('/myoutfit/images/logo.png') no-repeat;
+    width: 593px;
+    height: 346px;
+    display:inline-block;
+}
+#loginContent .logoTitle{
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+#loginContent .beta{
+    color: darkgray;
+    position: relative;
+    bottom: 18px;
+    right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#loginContent .welcomeContent{
+    text-align: left;
+}
+#loginContent .welcomeContent .title {
+    font-size: 45px;
+    color: #708090;
+    margin-bottom: 20px;
+}
+
+#loginContent .welcomeContent .content {
+    font-size: 22px;
+}
+
+#loginContent .welcomeContent .buttons {
+     margin-top: 20px;
+ }
+#loginContent .welcomeContent .buttons .button {
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+#loginContent .welcomeContent .buttons .indicator{
+    font-size: 30px;
+    margin-left: 5px;
+}
+#loginContent .welcomeContent .buttons .login {
+     color: dodgerblue;
+}
+
+#loginContent .welcomeContent .buttons .signup {
+    color: crimson;
+}
